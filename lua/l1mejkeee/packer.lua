@@ -19,11 +19,6 @@ return require('packer').startup(function(use)
     use ('theprimeagen/harpoon')
     use ('mbbill/undotree')
     use ('tpope/vim-fugitive')
-    use {
-        'OscarCreator/rsync.nvim',
-        run = 'make',
-        requires = {'nvim-lua/plenary.nvim'},
-    }
     use "terrortylor/nvim-comment"
     use {
         'VonHeikemen/lsp-zero.nvim',
