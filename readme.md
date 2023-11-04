@@ -9,5 +9,5 @@ Included packages:
 - [theprimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) -- extension to move fast between files
 - [mbbill/undotree](https://github.com/mbbill/undotree) -- extension to use undo history
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) -- extension for git
-- [m4xshen/autoclose.nvim](https://github.com/m4xshen/autoclose.nvim) -- autoclosing brackets, quotes
+- [terrortylor/nvim-comment](https://github.com/terrortylor/nvim-comment) -- commenting line
 
