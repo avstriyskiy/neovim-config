@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
     }
 
     use({ 'rose-pine/neovim', as = 'rose-pine' })
+    -- use 'AlexvZyl/nordic.nvim'
 
     use (
     'nvim-treesitter/nvim-treesitter',
