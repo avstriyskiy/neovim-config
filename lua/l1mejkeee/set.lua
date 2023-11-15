@@ -32,3 +32,7 @@ vim.opt.isfname:append("@-@")
 -- Апдейты
 vim.opt.updatetime = 50
 
+-- Маппинг от заглавных букв
+vim.api.nvim_create_user_command("W", "w", {})
+vim.api.nvim_create_user_command("WQ", "wq", {})
+vim.api.nvim_create_user_command("Q", "q", {})
