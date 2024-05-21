@@ -16,6 +16,15 @@ return require("packer").startup(function(use)
         "nvim-lualine/lualine.nvim",
         requires = { "nvim-tree/nvim-web-devicons", opt = true }
     }
+    -- All useful Go things
+    use 'ray-x/go.nvim'
+
+    -- Debugging
+    -- use "mfussenegger/nvim-dap"
+    -- use "leoluz/nvim-dap-go"
+    -- use "rcarriga/nvim-dap-ui"
+    -- use "nvim-telescope/telescope-dap.nvim"
+    -- use "theHamsta/nvim-dap-virtual-text"
     
     -- Extras
     use "theprimeagen/harpoon"
@@ -40,4 +49,10 @@ return require("packer").startup(function(use)
             {"L3MON4D3/LuaSnip"},     -- Required
         }
     }
+    use({
+        "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+        config = function()
+            require("lsp_lines").setup()
+        end,
+    })
 end)
