@@ -26,6 +26,17 @@ return require("packer").startup(function(use)
     -- use "nvim-telescope/telescope-dap.nvim"
     -- use "theHamsta/nvim-dap-virtual-text"
     
+    -- Artificial Intellegence buddies
+    -- Remove the `use` here if you're using folke/lazy.nvim.
+    use 'Exafunction/codeium.vim'
+    -- use {
+    --     'Exafunction/codeium.vim',
+    --     config = function ()
+    --         vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+    --         vim.keymap.set('i', '<C-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
+    --     end
+    -- }
+    
     -- Extras
     use "theprimeagen/harpoon"
     use "mbbill/undotree"
