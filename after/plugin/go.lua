@@ -19,3 +19,14 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
   group = format_sync_grp,
 })
+
+-- tags
+vim.keymap.set("n", "<leader>gat", "<cmd>GoAddTag<CR>")
+vim.keymap.set("n", "<leader>grt", "<cmd>GoRmTag<CR>")
+-- tests
+vim.keymap.set("n", "<leader>gta", "<cmd>GoAddTest<CR>")
+vim.keymap.set("n", "<leader>gtA", "<cmd>GoAddAllTest<CR>")
+vim.keymap.set("n", "<leader>gte", "<cmd>GoAddExpTest<CR>")
+vim.keymap.set("n", "<leader>gtf", "<cmd>GoTestFunc<CR>")
+vim.keymap.set("n", "<leader>gtF", "<cmd>GoTestFile<CR>")
+vim.keymap.set("n", "<leader>gtp", "<cmd>GoTestPkg<CR>")

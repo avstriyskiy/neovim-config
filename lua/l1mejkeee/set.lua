@@ -1,3 +1,6 @@
+-- Курсор
+vim.opt.guicursor = ""
+
 -- Строки
 vim.opt.nu = true
 vim.opt.relativenumber = true
